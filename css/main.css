@@ -1,0 +1,118 @@
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  -webkit-box-shadow: 0 0 20px 6px rgba(0,0,0,0.5);
+          box-shadow: 0 0 20px 6px rgba(0,0,0,0.5);
+}
+.slide {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  min-width: 100%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.button {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.prev-slide {
+  left: 10px;
+  background: url("../img/arrow-left.svg") no-repeat center center;
+}
+.next-slide {
+  right: 10px;
+  background: url("../img/arrow-right.svg") no-repeat center center;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.slider .navigation {
+  width: 200px;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 20px;
+  z-index: 9999;
+}
+.slider .out-box {
+  border: 1px solid #fff;
+  float: left;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider .out-box:last-of-type {
+  margin: 0;
+}
+.slider .out-box:hover {
+  cursor: pointer;
+}
+.slider .inner {
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  width: 0;
+  height: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.active-inner {
+  background-color: #fff !important;
+  width: 100% !important;
+  height: 100% !important;
+}
