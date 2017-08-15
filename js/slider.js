@@ -1,10 +1,9 @@
-window.onload = function() {
 'use strict';
 // БАГ. Пройти с первого на второй, и обратно - нет первого слайда
 // Cannot read property 'style' of undefined   line 90
 var currentSlide     = 0;
 var prevSlideItem    = 0;
-var sliderWidth      = getComputedStyle(document.getElementsByClassName('slider')[0]).width;
+var sliderWidth      = window.getComputedStyle(document.getElementsByClassName('slider')[0]).width;
 var slides           = document.getElementsByClassName('slide');
 var computedSlides   = getComputedStyle(slides[0]);
 var slidesTransition = computedSlides.transitionDuration;
@@ -190,4 +189,3 @@ function setActiveItem() {
     inners[prevSlideItem].className = 'inner';
     }
 }
-};
