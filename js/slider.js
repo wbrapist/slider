@@ -172,10 +172,10 @@ function setSliderNavPosition() {
   var slidersWidth = parseFloat(sliderWidth);
 
   nav.style.left = ( (slidersWidth / 2) - (navWidth / 2) ) + 'px';
-  console.log(("Функция setSliderNavPosition отработала!"));
-  console.log(("Ширина слайдера: " + sliderWidth));
-  console.log(("Ширина слайдера после parseFloat(): " + slidersWidth));
-  console.log(("Ширина блока навигации слайдера: " + navWidth));
+  console.log(("Function setSliderNavPosition is done!"));
+  console.log(("Slider's width: " + sliderWidth));
+  console.log(("Slider's width after parseFloat(): " + slidersWidth));
+  console.log(("Slider's navigation-block width: " + navWidth));
 }
 
 function setActiveItem() {
