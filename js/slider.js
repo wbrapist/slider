@@ -1,4 +1,5 @@
-'use strict';
+window.addEventListener('load', function(){
+    'use strict';
 // БАГ. Пройти с первого на второй, и обратно - нет первого слайда
 // Cannot read property 'style' of undefined   line 90
 var currentSlide     = 0;
@@ -189,3 +190,5 @@ function setActiveItem() {
     inners[prevSlideItem].className = 'inner';
     }
 }
+
+});
