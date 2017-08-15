@@ -16,6 +16,7 @@
           align-items: center;
 }
 .slider {
+  display: none;
   overflow: hidden;
   position: relative;
   width: 1200px;
