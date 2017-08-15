@@ -1,3 +1,4 @@
+window.onload = function() {
 'use strict';
 // БАГ. Пройти с первого на второй, и обратно - нет первого слайда
 // Cannot read property 'style' of undefined   line 90
@@ -189,3 +190,4 @@ function setActiveItem() {
     inners[prevSlideItem].className = 'inner';
     }
 }
+};
