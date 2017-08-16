@@ -29,9 +29,9 @@
   bottom: 0;
   top: 0;
   left: 0;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   min-width: 100%;
   text-align: center;
   width: 100%;
