@@ -31,8 +31,6 @@ window.addEventListener('load', function(){
     nav.innerHTML = content;
   }
 
-
-
   setInterval(function() {
     if (focusOnSlider) return false;
 
